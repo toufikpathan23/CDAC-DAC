@@ -47,8 +47,7 @@ public class ShowroomManagementSystem {
 						break;
 					case 2:
 						System.out.println("Showroom contents : ");
-						for (Vehicle v : showroom)
-							System.out.println(v);
+						showroom.stream().forEach(v->System.out.println(v));
 						break;
 					case 3:
 						System.out.println("Enter chasis no");
